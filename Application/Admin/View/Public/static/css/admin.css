@@ -1,0 +1,65 @@
+/* 
+Author: Start Bootstrap - http://startbootstrap.com
+'SB Admin' HTML Template by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* ATTN: This is mobile first CSS - to update 786px and up screen width use the media query near the bottom of the document! */
+
+/* Global Styles */
+
+body {
+    margin-top: 50px;
+    background-color: #e5e5e5;
+}
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width:768px) {
+
+    /* Wrappers */
+    #wrapper {
+        padding: 30px 30px 100px 130px;
+        min-width: 768px;
+    }
+    /* page-wrapper */
+    #page-wrapper {
+        font-size: 15px;
+        min-height: 700px;
+        border: 1px solid rgba(57, 86, 87, 0.51);
+        border-radius: 5px;
+        padding: 15px 25px;
+        background-color: #ffffff;
+    }
+
+    /* Side Nav */
+    .side-nav {
+        margin-left: -100px;
+        left: 130px;
+        width: 100px;
+        position: fixed;
+        top: 80px;
+        height: 100%;
+        border-radius: 5px;
+        border: none;
+        background-color: #e5e5e5;
+        overflow-y: auto;
+    }
+    /* dropdown */
+    .side-nav>li.dropdown {
+        font-size: 15px;
+        text-align: center;
+    }
+    /* dropdown  a*/
+    .side-nav>li.dropdown>a:hover,
+    .side-nav>li.dropdown>a:focus {
+        color: #345df5;
+        background-color: #ffffff;
+    }
+
+    select {
+        min-height: 30px;
+        border: 1px solid #cccccc;
+    }
+}
