@@ -3,7 +3,11 @@ namespace Admin\Controller;
 use Think\Controller;
 class DashboardController extends Controller
 {
+    private $topBar = array(array('active'=>"active",'url'=>"#",   'value'=>"交易信息"));
+
     public function transactionStatus(){
+        $this->assign('topBar',$this->topBar);
+
         $arr = array("2015-7-1", "2015-7-2", "2015-7-3", "2015-7-4", "2015-7-5", "2015-7-6",
             "2015-7-7", "2015-7-8", "2015-7-9", "2015-7-10", "2015-7-11", "2015-7-12",
             "2015-7-13", "2015-7-14", "2015-7-15", "2015-7-16");

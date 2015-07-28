@@ -1,0 +1,10 @@
+<!-- 后期需要模块化，使用foreach创建多条数据 -->
+
+<ul class="nav nav-tabs top-nav">
+    <foreach name="topBar" item="v">
+    <li  class="dropdown <{$v.active}>">
+        <a href="<{$v.url}>"><{$v.value}></a>
+    </li>
+    </foreach>
+</ul>
+

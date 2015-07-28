@@ -20,43 +20,31 @@
             function (ec) {
                 var myChart = ec.init(document.getElementById('myecharts'));
                 var option = {
-                    title: {
-                        text: "我自己的标题",
-                        subtext: "副标题"
+                    title : {
+                        text: '',
+                        subtext: ''
                     },
-                    tooltip: {
-                        trigger: "axis"
+                    tooltip : {
+                        trigger: 'axis'
                     },
                     legend: {
-                        data: ["成功", "失败", "总次数"]
+                        data:['成功','失败','全部']
                     },
                     toolbox: {
-                        show: true,
-                        feature: {
-                            mark: {
-                                show: false
-                            },
-                            dataView: {
-                                show: true,
-                                readOnly: true
-                            },
-                            magicType: {
-                                show: true,
-                                type: ["line", "bar"]
-                            },
-                            restore: {
-                                show: true
-                            },
-                            saveAsImage: {
-                                show: true
-                            }
+                        show : true,
+                        feature : {
+                            mark : {show: false},
+                            dataView : {show: true, readOnly: true},
+                            magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                            restore : {show: true},
+                            saveAsImage : {show: true}
                         }
                     },
-                    calculable: false,
-                    xAxis: [
+                    calculable : false,
+                    xAxis : [
                         {
-                            type: "category",
-                            boundaryGap: false,
+                            type : 'category',
+                            boundaryGap : false,
                             splitLine: {
                                 show: false
                             },
@@ -64,13 +52,12 @@
                                 show: true,
                                 rotate: -45
                             },
-                            data: arr
+                            data : arr
                         }
                     ],
-                    yAxis: [
+                    yAxis : [
                         {
-                            type: "value",
-                            name: "单位",
+                            type : 'value',
                             splitLine: {
                                 lineStyle: {
                                     width: 1,
@@ -85,24 +72,30 @@
                             }
                         }
                     ],
-                    series: [
+                    series : [
                         {
-                            name: "成功",
-                            type: "line",
+                            name:'成功',
+                            type:'line',
+                            smooth:true,
+                            itemStyle: {normal: {areaStyle: {type: 'default'}}},
                             data: arr1
                         },
                         {
-                            name: "失败",
-                            type: "line",
-                            data: arr2
+                            name:'失败',
+                            type:'line',
+                            smooth:true,
+                            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                            data:arr2
                         },
                         {
-                            type: "line",
-                            name: "总次数",
-                            data: arr3
+                            name:'全部',
+                            type:'line',
+                            smooth:true,
+                            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                            data:arr3
                         }
                     ]
-                }
+                };
                 myChart.setOption(option);
             }
     );

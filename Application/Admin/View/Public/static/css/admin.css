@@ -35,16 +35,13 @@ body {
 
     /* Side Nav */
     .side-nav {
-        margin-left: -100px;
-        left: 130px;
+        left: 20px;
         width: 100px;
         position: fixed;
-        top: 80px;
-        height: 100%;
+        top: 130px;
         border-radius: 5px;
-        border: none;
         background-color: #e5e5e5;
-        overflow-y: auto;
+        /*overflow-y: auto;*/
     }
     /* dropdown */
     .side-nav>li.dropdown {
@@ -54,12 +51,32 @@ body {
     /* dropdown  a*/
     .side-nav>li.dropdown>a:hover,
     .side-nav>li.dropdown>a:focus {
-        color: #345df5;
-        background-color: #ffffff;
+        color: #ffffff;
+        background-color: #345df5;
     }
 
     select {
         min-height: 30px;
         border: 1px solid #cccccc;
+    }
+
+    #myecharts{
+        height:400px;
+        width: 100%;
+        border:1px solid rgba(57, 86, 87, 0.51);
+        border-radius: 5px;
+        background-color: #e5e5e5;
+    }
+
+    .top-nav{
+        border: 2px;
+        padding-left: 10px;
+    }
+    /* dropdown  a*/
+    .top-nav>li.dropdown>a:active,
+    .top-nav>li.dropdown>a:hover,
+    .top-nav>li.dropdown>a:focus {
+        color: #345df5;
+        background-color: #ffffff;
     }
 }

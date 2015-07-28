@@ -1,11 +1,75 @@
 <include file="Public/header" title="后台主页" />
 <div id="page-wrapper">
-    <div id="page-head">
-        <ol class="breadcrumb">
-            <li><a href="<{:U('Dashboard/transactionStatus')}>">首页</a></li>
-            <li class="active">交易状态</li>
-        </ol>
+    <div class="row">
+        <div class="col-md-8">
+            <ol class="breadcrumb bg-breadcrumb" style="background-color: transparent">
+                <li><a href="<{:U('Dashboard/transactionStatus')}>">首页</a></li>
+                <li class="active">用户</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-12">
+            <h3>用户列表</h3>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-12">
+            <b><h6>基于您的权限显示该列表</h6></b>
+        </div>
+    </div>
 
+    <div class="well">
+        <div class="row">
+            <div class="col-md-3">
+                <label class="hydra-label" style="padding-top: 8px;">共检测出#条用户记录</label>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id="sel_sites">
+                    <option value="-1">- 请选择站点 -</option>
+                    <option value="#">LiTong_China</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <select class="form-control" id="sel_operators">
+                    <option value="-1">- 请选择用户组 -</option>
+                    <option value="#">操作员</option>
+                    <option value="#">112313133121332操作员</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary" onclick="#">新增用户</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-group col-md-3 col-md-push-9">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">搜索用户</button>
+            </span>
+        </div>
+    </div>
+
+    <br>
+    <table class="table table-hover">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <div class="row">
+        <div class="col-md-3 col-md-push-9">
+            <{$page}>
+        </div>
     </div>
 
 
