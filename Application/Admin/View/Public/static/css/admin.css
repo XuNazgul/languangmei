@@ -79,4 +79,42 @@ body {
         color: #345df5;
         background-color: #ffffff;
     }
+
+
+
+
+
+    /*workstation*/
+    .accordion-group{
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+    }
+    .accordion-group>.accordion-heading{
+        padding-top: 15px;
+    }
+
+    .tabs-left{
+        padding: 5px 15px;
+    }
+    .tabs-left > .nav-pills {
+        float: left;
+        margin-right: 19px;
+        brder-right: 1px solid #dd3956;
+        clear: both;
+    }
+    /*.tabs-left > .tab-content {
+        float: left;
+        brder-left: 1px solid #dd3956;
+    }*/
+
+    .tabs-left > .tab-content {
+        brder: 5px solid #dd3956;
+
+        overflow: hidden;
+    }
+
+    .control-label{
+        padding-top: 5px;
+    }
+
 }

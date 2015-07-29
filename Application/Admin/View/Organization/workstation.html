@@ -1,6 +1,114 @@
 <include file="Public/header" title="后台主页" />
 <div id="page-wrapper">
-    workstation
+    <div class="row">
+        <div class="col-md-8">
+            <ol class="breadcrumb bg-breadcrumb" style="background-color: transparent">
+                <li><a href="<{:U('Organization/user')}>">首页</a></li>
+                <li class="active">工作站</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-12">
+            <h3>工作站</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="accordion-group" >
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                <div class="row">
+                    <div class="col-md-10">
+                        &ensp;&ensp;<i class="fa fa-search" style="color: #080808"></i>开始查询
+                    </div>
+                    <div class="col-md-1">
+                        <span class="help" style="color: #080808">(展开/折叠)</span>
+                    </div>
+                    <div class="col-md-1">
+                        <i class="fa fa-arrow-circle-down" style="color: #080808"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+            <div class="accordion-inner ">
+                <div class="tabs-left row">
+                    <div class="col-md-1">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active">
+                                <a href="#conditionOne" id="a_basic" data-toggle="tab">过滤</a>
+                            </li>
+                            <li>
+                                <a href="#conditionTwo" id="a_id" data-toggle="tab">查询</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 tab-content ">
+                        <div class="fade active in" id="conditionOne">
+                            <div class="row">
+                                <label class="col-md-2 text-right control-label" for="sel_products">产品:</label>
+                                <div class="col-md-2">
+                                    <select class="hydra-select-1" id="sel_products">
+                                        <option value="-1">- 选择产品 -</option>
+                                        <option value="#">GreenT_asia</option>
+                                        <option value="#">iRT_asia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-md-2 text-right control-label" for="sel_sites">站点:</label>
+                                <div class="col-md-2">
+                                    <select class="hydra-select-1" id="sel_sites" value="-1">
+                                        <option value="-1">- 选择站点 -</option>
+                                        <option value="114">LiTong_China</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-md-2 text-right control-label" for="sel_wsg">工作站 分组:</label>
+                                <div class="col-md-2">
+                                    <select class="hydra-select-1" id="sel_wsg">
+                                        <option value="-1" selected="selected">- 选择用户组 -
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="conditionTwo">
+                            <div class="row">
+                                    <label class="col-md-2 text-right control-label" for="input_search">查询:</label>
+                                    <div class="col-md-3">
+                                        <input id="input_search" type="text" class="input-xlarge" placeholder="通过MAC地址或者计算机名字查找">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="conditionThree">
+                                <div class="row">
+                                    <label class="col-md-2 text-right control-label" for="admin_args"> 查询参数:</label>
+                                    <div class="col-md-3">
+                                        <textarea id="admin_args" class="input-large" rows="8"></textarea>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="submit" id="btn_search" class="btn btn-success" value="查询">
+                        <input type="button" id="btn_reset" value="重置" class="btn btn-default">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
 <include file="Public/footer" />

@@ -13,7 +13,7 @@ jQuery(document).ready(function () {
     for (var i = 0; i < myNav.length; i++) {
         var links = myNav.eq(i).attr("href");
         var myURL = document.URL;
-        var durl=/http:\/\/([^\/]+)\//i;
+        var durl=/http:\/\/([^\/]+)\//i; //最后的/i是忽略大小写的意思
         domain = myURL.match(durl);
         var result = myURL.replace("http://"+domain[1],"");
         if (links == result) {

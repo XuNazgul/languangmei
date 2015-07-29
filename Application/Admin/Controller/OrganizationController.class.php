@@ -6,7 +6,7 @@ class OrganizationController extends Controller
     private $topBar = array(array('active'=>"",'url'=>"#",   'value'=>"用户"),
         array('active'=>"",'url'=>"#",   'value'=>"站点"),
         array('active'=>"",'url'=>"#",   'value'=>"工作站"),
-        array('active'=>"",'url'=>APP_PATH,   'value'=>"工作站 分组"));
+        array('active'=>"",'url'=>"#",   'value'=>"工作站 分组"));
 
     function __construct()
     {
