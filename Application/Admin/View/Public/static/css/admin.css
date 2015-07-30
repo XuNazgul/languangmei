@@ -93,28 +93,27 @@ body {
         padding-top: 15px;
     }
 
-    .tabs-left{
+    .find>.find-c{
+        float: left;
+        position: absolute;
         padding: 5px 15px;
     }
-    .tabs-left > .nav-pills {
-        float: left;
-        margin-right: 19px;
-        brder-right: 1px solid #dd3956;
+    .find>.tab-content{
+        padding-left: 100px;
+        min-height: 100px;
         clear: both;
     }
-    /*.tabs-left > .tab-content {
-        float: left;
-        brder-left: 1px solid #dd3956;
-    }*/
-
-    .tabs-left > .tab-content {
-        brder: 5px solid #dd3956;
-
-        overflow: hidden;
+    .find>.tab-content>.tab-pane>.row{
+        padding-bottom: 10px;
     }
 
+    .find>.controls{
+        clear: both;
+        padding-left: 200px;
+        padding-bottom: 10px;
+    }
     .control-label{
-        padding-top: 5px;
+        padding: 10px;
     }
 
 }
